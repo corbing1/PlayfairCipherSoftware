@@ -1,0 +1,22 @@
+body { background-color: darkgray;
+color: #221811;
+font-family: Verdana, Arial, sans-serif; }
+
+footer { position: absolute;
+bottom: 10px;
+font-size: 12px; }
+
+h1 { position: relative;
+left: 5px; }
+	
+#cipherboxes { position: relative;
+left: 15px;
+float: left; }
+
+#options { position: relative;
+left: 100px;
+top: 10px;
+margin: auto;
+float: left; }
+
+#main { margin: auto; }

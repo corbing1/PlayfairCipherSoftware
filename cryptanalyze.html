@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="style.css">
+<h1>
+Playfair Cryptanalysis
+</h1>
+<div id="main">
+<div id="cipherboxes">
+<label for="plain">Plaintext: (Plaintext can be a crib or complete)</label><br><br>
+<textarea id="plain" cols="60" rows="10"></textarea><br><br>
+<label for="cipher">Ciphertext: (Ciphertext must be complete)</label><br><br>
+<textarea id="cipher" cols="60" rows="10"></textarea><br><br>
+<label for="generated">Generated Ciphertext:</label><br><br>
+<textarea id="generated" cols="60" rows="10"></textarea><br><br>
+</div>
+<div id="options">
+<br>
+<input type="checkbox" id="crib"> Is the plaintext a crib?<br><br>
+<label for="keyword">Use a keyword to form the square:</label><br><br><input type="text" name="keyword" id="keyword">
+<input type="button" id="keywordconfirm" value="Form Square"><br><br>
+<label>or form the square manually:</label><br><br>
+<!--Below are the textbox definitions for the table. Names are based on the equivalent coordinates of the array that holds the table-->
+<!--For example, [0][0] = t00; [3][4] = t34. t stands for table -->
+<input type="text" id="t00" size="1" maxLength="1">
+<input type="text" id="t01" size="1" maxLength="1">
+<input type="text" id="t02" size="1" maxLength="1">
+<input type="text" id="t03" size="1" maxLength="1">
+<input type="text" id="t04" size="1" maxLength="1"><br>
+<input type="text" id="t10" size="1" maxLength="1">
+<input type="text" id="t11" size="1" maxLength="1">
+<input type="text" id="t12" size="1" maxLength="1">
+<input type="text" id="t13" size="1" maxLength="1">
+<input type="text" id="t14" size="1" maxLength="1"><br>
+<input type="text" id="t20" size="1" maxLength="1">
+<input type="text" id="t21" size="1" maxLength="1">
+<input type="text" id="t22" size="1" maxLength="1">
+<input type="text" id="t23" size="1" maxLength="1">
+<input type="text" id="t24" size="1" maxLength="1"><br>
+<input type="text" id="t30" size="1" maxLength="1">
+<input type="text" id="t31" size="1" maxLength="1">
+<input type="text" id="t32" size="1" maxLength="1">
+<input type="text" id="t33" size="1" maxLength="1">
+<input type="text" id="t34" size="1" maxLength="1"><br>
+<input type="text" id="t40" size="1" maxLength="1">
+<input type="text" id="t41" size="1" maxLength="1">
+<input type="text" id="t42" size="1" maxLength="1">
+<input type="text" id="t43" size="1" maxLength="1">
+<input type="text" id="t44" size="1" maxLength="1"><br><br>
+<input type="button" id="confirm" value="Check">
+<input type="button" id="compare" value="Compare Blocks"><br>
+<input type="button" id="reset" value="Reset">
+<input type="button" id="squareclear" value="Clear Square"><br>
+<a href="index.html">
+<input type="button" id="cipher" value="Encipher/Decipher">
+</a>
+</div>
+</div>
+<footer>
+<i>Created by Gavin Corbin for CSC 483, Fall 2022 at NKU</i>
+</footer>
+<script src="cryptscript.js"></script>
+</body>
+</html>
