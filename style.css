@@ -1,10 +1,6 @@
-body { background-color: darkgray;
+body { background-color: darkgray; 
 color: #221811;
 font-family: Verdana, Arial, sans-serif; }
-
-footer { position: absolute;
-bottom: 10px;
-font-size: 12px; }
 
 h1 { position: relative;
 left: 5px; }
@@ -20,3 +16,8 @@ margin: auto;
 float: left; }
 
 #main { margin: auto; }
+
+#header { position: absolute;
+right: 10px;
+top: 10px;
+font-size: 12px; }
